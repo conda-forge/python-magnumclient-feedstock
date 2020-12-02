@@ -5,11 +5,11 @@ Home: https://docs.openstack.org/python-magnumclient/latest/
 
 Package license: Apache-2.0
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/python-magnumclient-feedstock/blob/master/LICENSE.txt)
 
 Summary: Client library for Openstack Magnum API
 
-
+Development: https://docs.openstack.org/infra/manual/developers.html
 
 Current build status
 ====================
