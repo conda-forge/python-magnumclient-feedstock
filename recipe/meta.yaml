@@ -1,5 +1,5 @@
 {% set name = "python-magnumclient" %}
-{% set version = "3.6.0" %}
+{% set version = "3.7.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: e58c1e8e60625767f09ccfe4d4d2248dc0d803cfd033850d4172dce0193fa8a6
+  sha256: 74818a5ae973299d77a682d3952f1299a1118fac4d33e3647af2c7f06892677e
 
 build:
   number: 0
@@ -24,7 +24,6 @@ requirements:
   run:
     - python >=3.6
     - pbr !=2.1.0,>=2.0.0
-    - babel >2.4.0
     - keystoneauth1 >=3.4.0
     - stevedore >=1.20.0
     - requests >=2.14.2
