@@ -21,6 +21,7 @@ requirements:
     - pbr !=2.1.0,>=2.0.0
     - pip
     - python >=3.8
+    - setuptools
   run:
     - python >=3.8
     - pbr !=2.1.0,>=2.0.0
