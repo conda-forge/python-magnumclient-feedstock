@@ -6,11 +6,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: 463d2246242caf91720bdf598cfbd074656b215e2e0fc400b336cf997919e8e5
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
@@ -20,10 +20,10 @@ requirements:
   host:
     - pbr !=2.1.0,>=2.0.0
     - pip
-    - python >=3.8
+    - python {{ python_min }}
     - setuptools
   run:
-    - python >=3.8
+    - python >={{ python_min }}
     - pbr !=2.1.0,>=2.0.0
     - keystoneauth1 >=3.4.0
     - stevedore >=1.20.0
@@ -39,6 +39,8 @@ requirements:
     - decorator >=3.4.0
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - magnumclient
 
