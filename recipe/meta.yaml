@@ -1,5 +1,5 @@
 {% set name = "python-magnumclient" %}
-{% set version = "4.8.0" %}
+{% set version = "4.8.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 48392328497df6ccd543c7b4d50ad425da8d7c349dd165d05a72ec8d48e3ef5f
+  sha256: 6cd7d6f4ca508603f773344a4eb4e0d1968727171c726d12ee86d67635a7e3b5
 
 build:
   number: 0
