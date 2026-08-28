@@ -42,11 +42,11 @@ requirements:
 test:
   requires:
     - python {{ python_min }}
+    - pip
   imports:
     - magnumclient
-
   commands:
-    - magnum -h
+    - pip check
 
 about:
   home: https://docs.openstack.org/python-magnumclient/latest/
