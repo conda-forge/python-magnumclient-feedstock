@@ -1,5 +1,6 @@
 {% set name = "python-magnumclient" %}
 {% set version = "5.0.0" %}
+{% set python_min = "3.11" %}
 
 package:
   name: {{ name|lower }}
